@@ -33,7 +33,7 @@ cover:
     relative: false # when using page bundles set this to true
     hidden: true # only hide on current single page
 editPost:
-    URL: "https://github.com/hugo-papermod"
+    URL: "https://github.com/bisw4sh/hugo-blogs"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 ---

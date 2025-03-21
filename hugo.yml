@@ -18,7 +18,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: biswash
-  description: "ExampleSite description"
+  description: "Static blog and portfolio site using hugo static site generator."
   keywords: [Blog, Portfolio, PaperMod]
   author: ['Me', "biswash"]
   # author: ["Me", "You"] # multiple authors
