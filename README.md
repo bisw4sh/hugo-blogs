@@ -265,3 +265,8 @@ cover:
  Get the themes from:
  1. [Jamstack Themes](https://jamstackthemes.dev/)
  2. [Hugo Themes](https://themes.gohugo.io/)
+
+ ---
+
+ ### Github Pages Deployment
+[Follow hugo's docs for github pages deployment](https://gohugo.io/host-and-deploy/host-on-github-pages/)
