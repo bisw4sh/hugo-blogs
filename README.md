@@ -15,7 +15,7 @@ This repo is a static blog site(SSG) made using [hugo](https://gohugo.io/) & wit
 ## Key things to consider
 
 1. **./hugo.yml**
-```toml
+```
 # baseURL: "http://bisw4sh.github.io/hugo"
 baseURL: "/"
 title: Biswash
@@ -175,7 +175,7 @@ outputs:
 ```
 
 2. **./archetypes/default.md**
-```toml
+```
 ---
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 date: '{{ .Date }}'
@@ -220,7 +220,7 @@ editPost:
 3. **./content/posts**
 - This is necessary because, if this isn't the case, it won't be displayed in the main page. Only one folder's contents are displayed.
 
-3. **./<static-files>**
+4. **./<static_files>**
 - This is the cause for images and cover images
 
 ```
@@ -237,3 +237,29 @@ cover:
 //<./posts/<post_name.md>>
 ![google oauth flow](/blogs/google-oauth.png)
 ```
+
+---
+
+### Setting up the hugo projects
+1. scaffold the hugo projects with :
+` hugo new site <site_name> --format -yml`
+--format : {yml (recommended), toml, json}
+
+2. use themes to get started or you could create your own.
+` git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke `
+
+3. Signal what theme is being used
+`echo "theme = 'ananke'" >> hugo.toml `
+
+4. start the server
+`hugo server` or `rm rf public server` to remove the build and start again
+
+5. add contents
+`hugo new content content/posts/my-first-post.md`
+ - totally depends on the theme used or configuration.
+
+ > fastest static site generator.
+
+ Get the themes from
+ [Jamstack Themes](https://jamstackthemes.dev/)
+ [Hugo Themes](https://themes.gohugo.io/)
