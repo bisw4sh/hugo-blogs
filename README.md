@@ -241,25 +241,27 @@ cover:
 ---
 
 ### Setting up the hugo projects
-1. scaffold the hugo projects with :
+
+#### 1. scaffold the hugo projects with :
 ` hugo new site <site_name> --format -yml`
+
 --format : {yml (recommended), toml, json}
 
-2. use themes to get started or you could create your own.
+#### 2. use themes to get started or you could create your own.
 ` git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke `
 
-3. Signal what theme is being used
+#### 3. Signal what theme is being used
 `echo "theme = 'ananke'" >> hugo.toml `
 
-4. start the server
+#### 4. start the server
 `hugo server` or `rm rf public server` to remove the build and start again
 
-5. add contents
+#### 5. add contents
 `hugo new content content/posts/my-first-post.md`
  - totally depends on the theme used or configuration.
 
- > fastest static site generator.
+---
 
- Get the themes from
- [Jamstack Themes](https://jamstackthemes.dev/)
- [Hugo Themes](https://themes.gohugo.io/)
+ Get the themes from:
+ 1. [Jamstack Themes](https://jamstackthemes.dev/)
+ 2. [Hugo Themes](https://themes.gohugo.io/)
