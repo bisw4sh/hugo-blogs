@@ -1,15 +1,15 @@
 # baseURL: "http://bisw4sh.github.io/hugo"
-baseURL: ""
+baseURL: "/"
 title: Biswash
 copyright: "© [bisw4sh](https://biswashdhungana.com.np)"
 pagination:
-  pagerSize: 10
+  pagerSize: 5
 theme: PaperMod
 
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
+buildDrafts: true
+buildFuture: true
+buildExpired: true
 
 minify:
   disableXML: true
@@ -20,7 +20,7 @@ params:
   title: biswash
   description: "Static blog and portfolio site using hugo static site generator."
   keywords: [Blog, Portfolio, PaperMod]
-  author: ['Me', "biswash"]
+  author: ["Me", "biswash"]
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -31,11 +31,11 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
-  disableSpecial1stPost: false
+  disableSpecial1stPost: true
   disableScrollToTop: false
   comments: false
   hidemeta: false
@@ -60,12 +60,12 @@ params:
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "me.jpg"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
+    title: biswash's blogs
+    subtitle: "I'm a software engineer from Pokhara, Nepal, specializing in full-stack web development. I mainly do backend work with TypeScript and Go. I'm interested in databases, cloud, and web3, focusing on performance, scalability, and decentralization."
+    imageUrl: "conv.jpg"
+    imageWidth: 250
+    imageHeight: 250
+    imageTitle: my mugshot
     buttons:
       - name: Posts
         url: posts
@@ -104,9 +104,9 @@ params:
       SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
+    hidden: false # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hiddenInSingle: false # hide on single page
 
   editPost:
     URL: "https://github.com/<path_to_repo>/content"
@@ -143,8 +143,14 @@ pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search

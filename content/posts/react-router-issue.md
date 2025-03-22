@@ -9,7 +9,7 @@ categories:
   - Routing
 author: ["biswash"]
 showToc: true
-TocOpen: false
+TocOpen: true
 draft: false
 hidemeta: false
 comments: false
@@ -27,7 +27,7 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 cover:
-    image: "/blogs/google oauth.png" # image path/url
+    image: "/blogs/react-router.jpg" # image path/url
     alt: "<alt text>" # alt text
     caption: "<text>" # display caption under cover
     relative: false # when using page bundles set this to true
